@@ -1,0 +1,24 @@
+<mvc:View controllerName="com.emp.employeeform.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+   <VBox class="sapUiSmallMargin">
+	    <f:SimpleForm id="SimpleFormChange354wide" editable="true" title="Employee Dashboard">
+        		<f:content>
+                	<Label text="Employee Id" />
+				    <Input id="idEmpId" value="" />
+                    <Label text="Employee Name" />
+				    <Input id="idEmpName" value="" />
+                    <Label text="Salary" />
+				    <Input id="idEmpSal" value="" />
+                    <Label text="Currency" />
+				    <Input id="idEmpCurr" value="" />
+                    <Label/>
+                    <Button text="Reload" press="onReload"></Button>
+
+                </f:content>
+    	</f:SimpleForm>
+	</VBox>
+    </Page>
+</mvc:View>
