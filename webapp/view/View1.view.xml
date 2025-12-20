@@ -7,13 +7,13 @@
 	    <f:SimpleForm id="SimpleFormChange354wide" editable="true" title="Employee Dashboard">
         		<f:content>
                 	<Label text="Employee Id" />
-				    <Input id="idEmpId" value="" />
+				    <Input id="idEmpId" value="{/empSTR/empId}" />
                     <Label text="Employee Name" />
-				    <Input id="idEmpName" value="" />
+				    <Input id="idEmpName" value="{/empSTR/empName}" />
                     <Label text="Salary" />
-				    <Input id="idEmpSal" value="" />
+				    <Input id="idEmpSal" value="{/empSTR/salary}" />
                     <Label text="Currency" />
-				    <Input id="idEmpCurr" value="" />
+				    <Input id="idEmpCurr" value="{/empSTR/currency}" />
                     <Label/>
                     <Button text="Reload" press="onReload"></Button>
 

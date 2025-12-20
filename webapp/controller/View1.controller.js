@@ -1,17 +1,22 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], (Controller) => {
+    "sap/ui/core/mvc/Controller",
+     "com/emp/employeeform/model/models"
+], (Controller,Models) => {
     "use strict";
 
     return Controller.extend("com.emp.employeeform.controller.View1", {
         onInit() {
-           this.oView = this.getView()
+           this.oView = this.getView();
+
+           var oModel =  Models.createJSONModel();
+
+           this.oView.setModel(oModel);
         },
         onReload : function (){
-        this.oView.byId("idEmpId").setValue("100");
-        this.oView.byId("idEmpName").setValue("gunjan");
-        this.oView.byId("idEmpSal").setValue("1000");
-        this.oView.byId("idEmpCurr").setValue("USD");
+        this.oView.byId("idEmpId").setValue("");
+        this.oView.byId("idEmpName").setValue("");
+        this.oView.byId("idEmpSal").setValue("");
+        this.oView.byId("idEmpCurr").setValue("");
         }
     });
 });
