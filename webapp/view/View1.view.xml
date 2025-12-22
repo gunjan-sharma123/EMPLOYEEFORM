@@ -16,7 +16,8 @@
 				    <Input id="idEmpCurr" value="{/empSTR/currency}" />
                     <Label/>
                     <Button text="Reload" press="onReload"></Button>
-                     <Button text="show me" press="onShowme"></Button>
+                    <Button text="show me" press="onShowme"></Button>
+                    <Button text="Flip Flop" press="onFlip"></Button>
 
                 </f:content>
     	</f:SimpleForm>
