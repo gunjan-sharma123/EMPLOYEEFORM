@@ -5,11 +5,11 @@
     xmlns:core="sap.ui.core"
     xmlns:f="sap.ui.layout.form">
     <Page id="page" title="{i18n>title}">
-   <t:Table rows="{/empTab}" selectionMode="Single" rowSelectionChange="onRowSelect">
+<t:Table rows="{/empTab}" selectionMode="Single" rowSelectionChange="onRowSelect">
     <t:columns>
         <t:Column>
             <t:label>
-                <Label text="EmpId" />
+                <Label text="{i18n>XLBL_EMPID}" />
             </t:label>
             <t:template>
             <Text text="{empId}"/>
@@ -17,7 +17,7 @@
         </t:Column>
          <t:Column>
             <t:label>
-                <Label text="EmpName" />
+                <Label text="{i18n>XLBL_EMPNAME}" />
             </t:label>
              <t:template>
             <Text text="{empName}"/>
@@ -25,7 +25,7 @@
         </t:Column>
          <t:Column>
             <t:label>
-                <Label text="Salary" />
+                <Label text="{i18n>XLBL_SAL}" />
             </t:label>
              <t:template>
             <Text text="{salary}"/>
@@ -33,7 +33,7 @@
         </t:Column>
          <t:Column>
             <t:label>
-                <Label text="Currency" />
+                <Label text="{i18n>XLBL_CURR}" />
             </t:label>
              <t:template>
              <Text text="{currency}"/>
@@ -86,18 +86,18 @@
    <VBox class="sapUiSmallMargin">
 	    <f:SimpleForm  editable="true" title="Employee Dashboard" id="idSimple">
         		<f:content>
-                	<Label text="Employee Id" />
+                	<Label text="{i18n>XLBL_EMPID}" />
 				    <Input id="idEmpId" value="{empId}" />
-                    <Label text="Employee Name" />
+                    <Label text="{i18n>XLBL_EMPNAME}" />
 				    <Input id="idEmpName" value="{empName}" />
-                    <Label text="Salary" />
+                    <Label text="{i18n>XLBL_SAL}" />
 				    <Input id="idEmpSal" value="{salary}" />
-                    <Label text="Currency" />
+                    <Label text="{i18n>XLBL_CURR}" />
 				    <Input id="idEmpCurr" value="{currency}" />
                     <Label/>
-                    <Button text="Reload" press="onReload"></Button>
-                    <Button text="show me" press="onShowme"></Button>
-                    <Button text="Flip Flop" press="onFlip"></Button>
+                    <Button text="{i18n>XBUT_RELOAD}" press="onReload"></Button>
+                    <Button text="{i18n>XBUT_SHOW}" press="onShowme"></Button>
+                    <Button text="{i18n>XBUT_FLIP}" press="onFlip"></Button>
 
                 </f:content>
     	</f:SimpleForm>
