@@ -1,8 +1,88 @@
 <mvc:View controllerName="com.emp.employeeform.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
+    xmlns:t="sap.ui.table"
+    xmlns:core="sap.ui.core"
     xmlns:f="sap.ui.layout.form">
     <Page id="page" title="{i18n>title}">
+   <t:Table rows="{/empTab}">
+    <t:columns>
+        <t:Column>
+            <t:label>
+                <Label text="EmpId" />
+            </t:label>
+            <t:template>
+            <Text text="{empId}"/>
+            </t:template>
+        </t:Column>
+         <t:Column>
+            <t:label>
+                <Label text="EmpName" />
+            </t:label>
+             <t:template>
+            <Text text="{empName}"/>
+            </t:template>
+        </t:Column>
+         <t:Column>
+            <t:label>
+                <Label text="Salary" />
+            </t:label>
+             <t:template>
+            <Text text="{salary}"/>
+            </t:template>
+        </t:Column>
+         <t:Column>
+            <t:label>
+                <Label text="Currency" />
+            </t:label>
+             <t:template>
+             <Text text="{currency}"/>
+            </t:template>
+        </t:Column>
+        <t:Column>
+            <t:label>
+                <Label text="Smoker" />
+            </t:label>
+             <t:template>
+            <CheckBox selected="{smoker}"></CheckBox>
+            </t:template>
+        </t:Column>
+         <t:Column>
+            <t:label>
+                <Label text="Gender" />
+            </t:label>
+             <t:template>
+            <Text text="{gender}"/>
+            </t:template>
+        </t:Column>
+         <t:Column>
+            <t:label>
+                <Label text="M Status" />
+            </t:label>
+             <t:template>
+            <Select selectedKey ="{mState}">
+            <items>
+            <core:Item text ="Married" key="M"/>
+            <core:Item text ="Single" key="S"/>
+
+            </items>
+            </Select>
+            </t:template>
+        </t:Column>
+        
+         <t:Column>
+            <t:label>
+                <Label text="Rating" />
+            </t:label>
+             <t:template>
+            <RatingIndicator value="{rating}"></RatingIndicator>
+            </t:template>
+        </t:Column> 
+        
+
+    </t:columns>
+</t:Table>
+
    <VBox class="sapUiSmallMargin">
 	    <f:SimpleForm id="SimpleFormChange354wide" editable="true" title="Employee Dashboard">
         		<f:content>

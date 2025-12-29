@@ -3,20 +3,33 @@
     "empId": 5000,
     "empName": "Gunjan",
     "salary": 6500,
-    "currency": "EUR"
+    "currency": "EUR",
+    "smoker":true,
+    "gender":"F",
+    "mState" :"Married",
+    "rating": 5
   },
   "empTab": [
     {
       "empId": 9000,
       "empName": "Anaya",
       "salary": 5580,
-      "currency": "USD"
+      "currency": "USD",
+      "smoker":true,
+      "gender":"F",
+      "mState" :"Married",
+      "rating": 2
     },
     {
       "empId": 9001,
       "empName": "Alex",
       "salary": 7480,
-      "currency": "EUR"
+      "currency": "EUR",
+      "smoker":true,
+      "gender":"F",
+      "mState" :"Married",
+      "rating": 1
+
     }
   ]
 }

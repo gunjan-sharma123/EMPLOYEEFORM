@@ -24,7 +24,6 @@ sap.ui.define([
         console.log(oData);
         oModel.setProperty("/empSTR/empName","Spiderman");
 
-
         // this.oView.byId("idEmpId").setValue("");
         // this.oView.byId("idEmpName").setValue("");
         // this.oView.byId("idEmpSal").setValue("");
