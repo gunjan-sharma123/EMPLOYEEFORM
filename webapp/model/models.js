@@ -20,7 +20,14 @@ function (JSONModel, Device) {
         // oModel.loadData(sFilePath);
          oModel.loadData(sFilePath, null, true); // async
         return oModel;
-    }
-    };
+        },
+        createResourceModel: function () {
+        var oModel = new ResourceModel ({
+            bundleUrl : "i18n/i18n.properties"
+                });
+        
+        return oModel;
+        }
 
+    };
 });
