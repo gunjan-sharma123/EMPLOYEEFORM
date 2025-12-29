@@ -5,7 +5,7 @@
     xmlns:core="sap.ui.core"
     xmlns:f="sap.ui.layout.form">
     <Page id="page" title="{i18n>title}">
-   <t:Table rows="{/empTab}">
+   <t:Table rows="{/empTab}" selectionMode="Single" rowSelectionChange="onRowSelect">
     <t:columns>
         <t:Column>
             <t:label>
@@ -84,16 +84,16 @@
 </t:Table>
 
    <VBox class="sapUiSmallMargin">
-	    <f:SimpleForm id="SimpleFormChange354wide" editable="true" title="Employee Dashboard">
+	    <f:SimpleForm  editable="true" title="Employee Dashboard" id="idSimple">
         		<f:content>
                 	<Label text="Employee Id" />
-				    <Input id="idEmpId" value="{/empSTR/empId}" />
+				    <Input id="idEmpId" value="{empId}" />
                     <Label text="Employee Name" />
-				    <Input id="idEmpName" value="{/empSTR/empName}" />
+				    <Input id="idEmpName" value="{empName}" />
                     <Label text="Salary" />
-				    <Input id="idEmpSal" value="{/empSTR/salary}" />
+				    <Input id="idEmpSal" value="{salary}" />
                     <Label text="Currency" />
-				    <Input id="idEmpCurr" value="{/empSTR/currency}" />
+				    <Input id="idEmpCurr" value="{currency}" />
                     <Label/>
                     <Button text="Reload" press="onReload"></Button>
                     <Button text="show me" press="onShowme"></Button>

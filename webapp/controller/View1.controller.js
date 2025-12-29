@@ -44,6 +44,17 @@ sap.ui.define([
              this.oView.setModel(oGOTModel);
              this.oView.setModel(oModel, "got" );
 
+         },
+         onRowSelect: function(oEvent){
+            console.log(oEvent);
+            //step1:-what is the row which was selected by the user
+            var oRowContext = oEvent.getParameter("rowContext");
+            //step2:- know the address of the element
+            var sPath = oRowContext.getPath();
+            //step3:- get the object of the simple form
+            var oSimpleForm = this.getView().byId("idSimple");
+            //step4:- perform the element binding
+            oSimpleForm.bindElement(sPath);
          }
     });
 });

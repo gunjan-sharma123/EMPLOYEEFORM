@@ -29,6 +29,46 @@
       "gender":"M",
        "mState" :"Married",
       "rating":3
+    },
+    {
+      "empId": 1003,
+      "empName": "mohan",
+      "salary": 480,
+      "currency": "EUR",
+      "smoker":false,
+      "gender":"M",
+       "mState" :"Married",
+      "rating":3
+    },
+    {
+      "empId": 1004,
+      "empName": "raju",
+      "salary": 480,
+      "currency": "EUR",
+      "smoker":false,
+      "gender":"M",
+       "mState" :"Married",
+      "rating":3
+    },
+    {
+      "empId": 1005,
+      "empName": "rohan",
+      "salary": 480,
+      "currency": "EUR",
+      "smoker":false,
+      "gender":"M",
+       "mState" :"Married",
+      "rating":3
+    },
+    {
+      "empId": 1006,
+      "empName": "rohit",
+      "salary": 480,
+      "currency": "EUR",
+      "smoker":false,
+      "gender":"M",
+       "mState" :"Married",
+      "rating":3
     }
   ]
 }
